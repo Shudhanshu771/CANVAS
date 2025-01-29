@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Text Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo" id="logo-img"> 
+        </div>
+        <div class="undo-redo">
+            <button id="undo">
+                <span>&#8634;</span> Undo
+            </button>
+            <button id="redo">
+                <span>&#8658;</span> Redo
+            </button>
+        </div>
+    </div>
+
+    <!-- Canvas to draw text -->
+    <canvas id="canvas" width="700" height="500"></canvas>
+
+    <!-- Controls to add text, change font, size, style -->
+    <div class="controls">
+        <button id="add-text">Add Text</button>
+        <button id="delete-text">Delete Text</button>
+        <select id="font-select">
+            <option value="Arial">Arial</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Courier">Courier</option>
+        </select>
+        <input type="number" id="font-size" value="20" min="10" max="100">
+        <button id="bold">B</button>
+        <button id="italic">I</button>
+        <button id="underline">U</button>
+        <button id="align-left">Left</button>
+        <button id="align-center">Center</button>
+        <button id="align-right">Right</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
